@@ -4,4 +4,6 @@ interface Env {
   ENVIRONMENT: string;
   SomeAPIKey: string;
   SomeOtherAPIKey: string;
+  test:string;
+
 }

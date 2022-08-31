@@ -4,5 +4,6 @@ export const environment = {
   APIKeys: {
     SomeAPIKey: 'DEV API Key',
     SomeOtherAPIKey: 'DEV API Key 2'
-  }
+  },
+  test:'test'
 };

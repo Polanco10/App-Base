@@ -10,4 +10,5 @@ export class AppComponent {
   public environment = environment.environment;
   public SomeAPIKey = environment.APIKeys.SomeAPIKey;
   public SomeOtherAPIKey = environment.APIKeys.SomeOtherAPIKey;
+  public test = environment.test
 }

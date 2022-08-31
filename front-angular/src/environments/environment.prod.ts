@@ -4,5 +4,9 @@ export const environment = {
   APIKeys: {
     SomeAPIKey: $ENV.SomeAPIKey,
     SomeOtherAPIKey: $ENV.SomeOtherAPIKey
-  }
+  },
+   test:$ENV.test
+
 };
+console.log($ENV)
+console.log(environment)
