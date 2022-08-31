@@ -1,0 +1,27 @@
+version: '3.7'
+
+
+services:
+  api-java:
+    image: api-java:v1
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile
+    volumes:
+      - /data/java-api
+    ports:
+      - "8080:8080"
+  front-angular:
+    build:
+      context: ./front-angular/
+      dockerfile: Dockerfile
+
+    container_name: front
+    hostname: host_front
+    image: front-angular:v1
+    volumes:
+      - /data/front-angular
+    ports:
+      - "4200:4200"
+    env_file:
+        - .env
