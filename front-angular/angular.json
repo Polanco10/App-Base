@@ -18,8 +18,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "customWebpackConfig": {
+              "path":"custom-webpack.config.js"
+          },
             "outputPath": "dist/front-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -107,5 +110,8 @@
       }
     }
   },
-  "defaultProject": "front-angular"
+  "defaultProject": "front-angular",
+  "cli": {
+    "analytics": "669e8eae-8933-4167-98d4-b1fb9dd13986"
+  }
 }

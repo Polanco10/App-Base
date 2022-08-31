@@ -7,5 +7,7 @@ import {environment  }from 'src/environments/environment';
 })
 export class AppComponent {
   title = 'front-angular';
-  label:string = environment.THE_LABEL
+  public environment = environment.environment;
+  public SomeAPIKey = environment.APIKeys.SomeAPIKey;
+  public SomeOtherAPIKey = environment.APIKeys.SomeOtherAPIKey;
 }
