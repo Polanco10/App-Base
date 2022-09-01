@@ -17,8 +17,6 @@ services:
     build:
       context: ./front-angular/
       dockerfile: Dockerfile
-      args:
-       - test1=http://demo-production.com 
     container_name: front
     hostname: host_front
     image: front-angular:v1
@@ -26,6 +24,5 @@ services:
       - /data/front-angular
     ports:
       - "4200:80"
-    env_file:
-        - .env
+
   
